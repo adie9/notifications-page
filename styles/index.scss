@@ -25,6 +25,10 @@ $pr-blue: hsl(219, 85%, 26%);
     flex-direction: column;
  }
 
+ @mixin hover-blue-txt() {
+    color: $pr-blue;
+    cursor: pointer;
+ }
 
  * {
     padding: 0;
@@ -62,6 +66,10 @@ $pr-blue: hsl(219, 85%, 26%);
 
     .mark-read {
         color: $grayish-blue;
+
+        &:hover {
+            @include hover-blue-txt();
+        }
     }
 }
 
@@ -93,12 +101,35 @@ $pr-blue: hsl(219, 85%, 26%);
 
     p {
         
+        .name {
+
+            &:hover {
+                @include hover-blue-txt();
+            }
+        }
+
         .time-since {
             color: $grayish-blue;
         }
 
         .action {
             color: $dark-grayish-blue;
+        }
+
+        .post {
+            color: $dark-grayish-blue;
+        }
+
+        .message {
+            border: 1px solid $grayish-blue;
+            border-radius: 5px;
+            padding: 10px 15px 10px 10px;
+            margin-top: 10px;
+            color: $dark-grayish-blue;
+        }
+
+        .group {
+            color: $pr-blue;
         }
 
         .dot {

@@ -10,7 +10,8 @@ function Feed() {
             <Notification 
                 picture="../assets/images/avatar-mark-webber.webp"
                 name="Mark Webber"
-                action="reacted to your recent post My first tournament today!"
+                action="reacted to your recent post "
+                post="My first tournament today!"
                 isRead={!isRead}
                 time="1m ago"
             />
@@ -24,7 +25,8 @@ function Feed() {
             <Notification 
                 picture="../assets/images/avatar-jacob-thompson.webp"
                 name="Jacob Thompson"
-                action="has joined your group Chess Club"
+                action="has joined your group "
+                group="Chess Club"
                 isRead={!isRead}
                 time="5 days ago"
             />
@@ -32,6 +34,9 @@ function Feed() {
                 picture="../assets/images/avatar-rizky-hasanuddin.webp"
                 name="Rizky Hasanuddin"
                 action="sent you a private message"
+                message="Hello, thanks for setting up the Chess Club. I've been
+                        a member for a few weeks now and I'm already having lots
+                        of fun and improving my game."
                 isRead={isRead}
                 time="5 days ago"
             />
@@ -45,14 +50,16 @@ function Feed() {
             <Notification
                 picture="../assets/images/avatar-nathan-peterson.webp"
                 name="Nathan Peterson"
-                action="reacted to you recent post 5 end-game strategies to increase your winrate"
+                action="reacted to you recent post "
+                post="5 end-game strategies to increase your winrate"
                 isRead={isRead}
                 time="2 weeks ago"
             />
             <Notification
                 picture="../assets/images/avatar-anna-kim.webp"
                 name="Anna Kim"
-                action="left the group Chess Club"
+                action="left the group "
+                group="Chess Club"
                 isRead={isRead}
                 time="2 weeks ago"
             />

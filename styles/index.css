@@ -31,6 +31,10 @@ body {
 .header-container .mark-read {
   color: hsl(219, 14%, 63%);
 }
+.header-container .mark-read:hover {
+  color: hsl(219, 85%, 26%);
+  cursor: pointer;
+}
 
 .feed-container {
   display: flex;
@@ -50,11 +54,28 @@ body {
   width: 35px;
   align-self: first baseline;
 }
+.notification-container p .name:hover {
+  color: hsl(219, 85%, 26%);
+  cursor: pointer;
+}
 .notification-container p .time-since {
   color: hsl(219, 14%, 63%);
 }
 .notification-container p .action {
   color: hsl(219, 12%, 42%);
+}
+.notification-container p .post {
+  color: hsl(219, 12%, 42%);
+}
+.notification-container p .message {
+  border: 1px solid hsl(219, 14%, 63%);
+  border-radius: 5px;
+  padding: 10px 15px 10px 10px;
+  margin-top: 10px;
+  color: hsl(219, 12%, 42%);
+}
+.notification-container p .group {
+  color: hsl(219, 85%, 26%);
 }
 .notification-container p .dot {
   background-color: red;
