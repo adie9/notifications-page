@@ -10,6 +10,7 @@ body {
 
 .App {
   margin: 10px;
+  background-color: white;
 }
 
 .header-container {
@@ -17,6 +18,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: baseline;
+  margin-top: 25px;
 }
 .header-container h1 {
   font-size: 1.4rem;
@@ -78,9 +80,6 @@ body {
 .notification-container .noti-content .group {
   color: hsl(219, 85%, 26%);
 }
-.notification-container .noti-content .noti-image {
-  cursor: pointer;
-}
 .notification-container .noti-content .dot {
   background-color: red;
   height: 10px;
@@ -88,6 +87,9 @@ body {
   border-radius: 50%;
   display: inline-block;
   margin-left: 5px;
+}
+.notification-container .noti-image:hover {
+  cursor: pointer;
 }
 
 .unread {
@@ -101,4 +103,16 @@ body {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 950px) {
+  body {
+    background-color: hsl(211, 68%, 94%);
+  }
+  .App {
+    width: 50vw;
+    margin: 30px auto;
+    border-radius: 10px;
+    padding: 20px;
+  }
 }/*# sourceMappingURL=index.css.map */

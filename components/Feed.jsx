@@ -1,8 +1,10 @@
 import React, {useState} from "react";
 import Notification from "../components/Notification"
 
-function Feed() {
-    const [isRead, setIsRead] = useState(true);
+
+
+function Feed({isRead, setIsRead}) {
+    
 
     
     return (
@@ -13,6 +15,7 @@ function Feed() {
                 action="reacted to your recent post "
                 post="My first tournament today!"
                 isRead={!isRead}
+                setIsRead={setIsRead}
                 time="1m ago"
             />
             <Notification 
@@ -20,6 +23,7 @@ function Feed() {
                 name="Angela Gray"
                 action="followed you"
                 isRead={!isRead}
+                setIsRead={setIsRead}
                 time="5m ago"
             />
             <Notification 
@@ -28,6 +32,7 @@ function Feed() {
                 action="has joined your group "
                 group="Chess Club"
                 isRead={!isRead}
+                setIsRead={setIsRead}
                 time="5 days ago"
             />
             <Notification
@@ -38,6 +43,7 @@ function Feed() {
                         a member for a few weeks now and I'm already having lots
                         of fun and improving my game."
                 isRead={isRead}
+                setIsRead={setIsRead}
                 time="5 days ago"
             />
             <Notification
@@ -46,6 +52,7 @@ function Feed() {
                 action="commented on your picture"
                 picture="../assets/images/image-chess.webp"
                 isRead={isRead}
+                setIsRead={setIsRead}
                 time="1 week ago"
             />
             <Notification
@@ -62,6 +69,7 @@ function Feed() {
                 action="left the group "
                 group="Chess Club"
                 isRead={isRead}
+                setIsRead={setIsRead}
                 time="2 weeks ago"
             />
         </section>

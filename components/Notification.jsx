@@ -1,6 +1,14 @@
-import React from "react";
+import React, { forwardRef } from "react";
+import { useImperativeHandle } from "react";
+import Header from "./Header";
 
-function Notification({avatar, name, action, post, group, message, picture, isRead, time}) {
+function Notification({avatar, name, action, post, group, message, picture, isRead, setIsRead, time}) {
+    
+    function setAllTrue() {
+        if (!isRead) {
+            setIsRead(true);
+        }
+    }
 
     return (
         <div className={`notification-container ${!isRead && "unread"}`}>
@@ -12,9 +20,11 @@ function Notification({avatar, name, action, post, group, message, picture, isRe
                 {group ? <strong className="group">{group}</strong> : undefined}
                 {message ? <p className="message">{message}</p> : undefined}
                 <span className={!isRead && "dot"}></span><br/>
-                <span className="time-since">{time}</span></div>
-                {picture ? <img className="noti-image" src={picture} alt="chess"></img> : undefined}
+                <span className="time-since">{time}</span>
+            </div>
+            {picture ? <img className="noti-image" src={picture} alt="chess"></img> : undefined}
         </div>
+        
     )
 }
 
