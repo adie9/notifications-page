@@ -1,0 +1,38 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 16px;
+  margin: 10px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.header-container h1 {
+  font-size: 1.4rem;
+}
+.header-container h1 .noti-amount {
+  font-size: 1rem;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(219, 85%, 26%);
+  border-radius: 5px;
+  padding: 2px 10px;
+}
+.header-container .mark-read {
+  color: hsl(219, 14%, 63%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}/*# sourceMappingURL=index.css.map */
