@@ -14,6 +14,7 @@ body {
 
 .header-container {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: baseline;
 }
@@ -40,16 +41,31 @@ body {
 .notification-container {
   border-radius: 10px;
   display: flex;
+  flex-direction: row;
   padding: 10px;
   -moz-column-gap: 10px;
        column-gap: 10px;
-  background-color: hsl(210, 60%, 98%);
 }
 .notification-container img {
   width: 35px;
+  align-self: first baseline;
 }
 .notification-container p .time-since {
   color: hsl(219, 14%, 63%);
+}
+.notification-container p .action {
+  color: hsl(219, 12%, 42%);
+}
+.notification-container p .dot {
+  background-color: red;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.unread {
+  background-color: hsl(210, 60%, 98%);
 }
 
 .attribution {

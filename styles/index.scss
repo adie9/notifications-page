@@ -14,6 +14,18 @@ $pr-blue: hsl(219, 85%, 26%);
  // Font size
  $body-fs: 16px;
 
+ // Flex mixins
+ @mixin flex-row() {
+    display: flex;
+    flex-direction: row;
+ }
+
+ @mixin flex-col() {
+    display: flex;
+    flex-direction: column;
+ }
+
+
  * {
     padding: 0;
     margin: 0;
@@ -31,7 +43,8 @@ $pr-blue: hsl(219, 85%, 26%);
 
  // Header styles
 .header-container {
-    display: flex;
+    @include flex-row();
+
     justify-content: space-between;
     align-items: baseline;
 
@@ -54,8 +67,8 @@ $pr-blue: hsl(219, 85%, 26%);
 
 // Feed styles
 .feed-container {
-    display: flex;
-    flex-direction: column;
+    @include flex-col();
+
     row-gap: 10px;
 }
 
@@ -66,15 +79,16 @@ $pr-blue: hsl(219, 85%, 26%);
 
 .notification-container {
     @include notification-box();
+    @include flex-row();
     
-    display: flex;
     padding: 10px;
     column-gap: 10px;
-    background-color: $very-light-grayish-blue;
+    
 
 
     img {
         width: 35px;
+        align-self: first baseline;
     }
 
     p {
@@ -82,8 +96,24 @@ $pr-blue: hsl(219, 85%, 26%);
         .time-since {
             color: $grayish-blue;
         }
+
+        .action {
+            color: $dark-grayish-blue;
+        }
+
+        .dot {
+            background-color: red;
+            height: 10px;
+            width: 10px;
+            border-radius: 50%;
+            display: inline-block;
+        }
         
     }
+}
+
+.unread {
+    background-color: $very-light-grayish-blue;
 }
 
 
