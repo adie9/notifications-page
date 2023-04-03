@@ -1,11 +1,9 @@
-import React, {useState} from "react";
+import React from "react";
 import Notification from "../components/Notification"
 
 
 
 function Feed({isRead, setIsRead}) {
-    
-
     
     return (
         <section className="feed-container">

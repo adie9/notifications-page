@@ -1,6 +1,5 @@
-import React, { forwardRef } from "react";
-import { useImperativeHandle } from "react";
-import Header from "./Header";
+import React from "react";
+
 
 function Notification({avatar, name, action, post, group, message, picture, isRead, setIsRead, time}) {
     
