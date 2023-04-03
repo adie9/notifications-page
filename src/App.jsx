@@ -2,6 +2,7 @@ import React from "react"
 import "../styles/index.css"
 import Header from "../components/Header"
 import Feed from "../components/Feed"
+import Footer from "../components/Footer"
 import { useState } from "react"
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       isUnread={isUnread} setIsUnread={setIsUnread}
       notiAmount={notiAmount} setAmount={setAmount} />
       <Feed isRead={isRead} setIsRead={setIsRead} isUnread={isUnread} setIsUnread={setIsUnread} />
+      <Footer />
     </div>
   )
 }
