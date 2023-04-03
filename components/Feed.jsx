@@ -10,7 +10,7 @@ function Feed({isRead, setIsRead}) {
     return (
         <section className="feed-container">
             <Notification 
-                avatar="../assets/images/avatar-mark-webber.webp"
+                avatar="/images/avatar-mark-webber.webp"
                 name="Mark Webber"
                 action="reacted to your recent post "
                 post="My first tournament today!"
@@ -19,7 +19,7 @@ function Feed({isRead, setIsRead}) {
                 time="1m ago"
             />
             <Notification 
-                avatar="../assets/images/avatar-angela-gray.webp"
+                avatar="/images/avatar-angela-gray.webp"
                 name="Angela Gray"
                 action="followed you"
                 isRead={!isRead}
@@ -27,7 +27,7 @@ function Feed({isRead, setIsRead}) {
                 time="5m ago"
             />
             <Notification 
-                avatar="../assets/images/avatar-jacob-thompson.webp"
+                avatar="/images/avatar-jacob-thompson.webp"
                 name="Jacob Thompson"
                 action="has joined your group "
                 group="Chess Club"
@@ -36,7 +36,7 @@ function Feed({isRead, setIsRead}) {
                 time="5 days ago"
             />
             <Notification
-                avatar="../assets/images/avatar-rizky-hasanuddin.webp"
+                avatar="/images/avatar-rizky-hasanuddin.webp"
                 name="Rizky Hasanuddin"
                 action="sent you a private message"
                 message="Hello, thanks for setting up the Chess Club. I've been
@@ -47,16 +47,16 @@ function Feed({isRead, setIsRead}) {
                 time="5 days ago"
             />
             <Notification
-                avatar="../assets/images/avatar-kimberly-smith.webp"
+                avatar="/images/avatar-kimberly-smith.webp"
                 name="Kimberly Smith"
                 action="commented on your picture"
-                picture="../assets/images/image-chess.webp"
+                picture="/images/image-chess.webp"
                 isRead={isRead}
                 setIsRead={setIsRead}
                 time="1 week ago"
             />
             <Notification
-                avatar="../assets/images/avatar-nathan-peterson.webp"
+                avatar="/images/avatar-nathan-peterson.webp"
                 name="Nathan Peterson"
                 action="reacted to you recent post "
                 post="5 end-game strategies to increase your winrate"
@@ -64,7 +64,7 @@ function Feed({isRead, setIsRead}) {
                 time="2 weeks ago"
             />
             <Notification
-                avatar="../assets/images/avatar-anna-kim.webp"
+                avatar="/images/avatar-anna-kim.webp"
                 name="Anna Kim"
                 action="left the group "
                 group="Chess Club"
