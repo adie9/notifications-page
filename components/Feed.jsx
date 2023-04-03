@@ -11,21 +11,21 @@ function Feed() {
                 picture="../assets/images/avatar-mark-webber.webp"
                 name="Mark Webber"
                 action="reacted to your recent post My first tournament today!"
-                isRead={isRead}
+                isRead={!isRead}
                 time="1m ago"
             />
             <Notification 
                 picture="../assets/images/avatar-angela-gray.webp"
                 name="Angela Gray"
                 action="followed you"
-                isRead={isRead}
+                isRead={!isRead}
                 time="5m ago"
             />
             <Notification 
                 picture="../assets/images/avatar-jacob-thompson.webp"
                 name="Jacob Thompson"
                 action="has joined your group Chess Club"
-                isRead={isRead}
+                isRead={!isRead}
                 time="5 days ago"
             />
             <Notification
