@@ -3,7 +3,7 @@ import Notification from "../components/Notification"
 
 
 
-function Feed({isRead, setIsRead}) {
+function Feed({isRead, setIsRead, isUnread, setIsUnread}) {
     
     return (
         <section className="feed-container">
@@ -12,16 +12,16 @@ function Feed({isRead, setIsRead}) {
                 name="Mark Webber"
                 action="reacted to your recent post "
                 post="My first tournament today!"
-                isRead={!isRead}
-                setIsRead={setIsRead}
+                isUnread={isUnread}
+                setIsUnread={setIsUnread}
                 time="1m ago"
             />
             <Notification 
                 avatar="/images/avatar-angela-gray.webp"
                 name="Angela Gray"
                 action="followed you"
-                isRead={!isRead}
-                setIsRead={setIsRead}
+                isUnread={isUnread}
+                setIsUnread={setIsUnread}
                 time="5m ago"
             />
             <Notification 
@@ -29,8 +29,8 @@ function Feed({isRead, setIsRead}) {
                 name="Jacob Thompson"
                 action="has joined your group "
                 group="Chess Club"
-                isRead={!isRead}
-                setIsRead={setIsRead}
+                isUnread={isUnread}
+                setIsUnread={setIsUnread}
                 time="5 days ago"
             />
             <Notification
