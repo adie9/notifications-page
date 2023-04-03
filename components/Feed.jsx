@@ -8,7 +8,7 @@ function Feed() {
     return (
         <section className="feed-container">
             <Notification 
-                picture="../assets/images/avatar-mark-webber.webp"
+                avatar="../assets/images/avatar-mark-webber.webp"
                 name="Mark Webber"
                 action="reacted to your recent post "
                 post="My first tournament today!"
@@ -16,14 +16,14 @@ function Feed() {
                 time="1m ago"
             />
             <Notification 
-                picture="../assets/images/avatar-angela-gray.webp"
+                avatar="../assets/images/avatar-angela-gray.webp"
                 name="Angela Gray"
                 action="followed you"
                 isRead={!isRead}
                 time="5m ago"
             />
             <Notification 
-                picture="../assets/images/avatar-jacob-thompson.webp"
+                avatar="../assets/images/avatar-jacob-thompson.webp"
                 name="Jacob Thompson"
                 action="has joined your group "
                 group="Chess Club"
@@ -31,7 +31,7 @@ function Feed() {
                 time="5 days ago"
             />
             <Notification
-                picture="../assets/images/avatar-rizky-hasanuddin.webp"
+                avatar="../assets/images/avatar-rizky-hasanuddin.webp"
                 name="Rizky Hasanuddin"
                 action="sent you a private message"
                 message="Hello, thanks for setting up the Chess Club. I've been
@@ -41,14 +41,15 @@ function Feed() {
                 time="5 days ago"
             />
             <Notification
-                picture="../assets/images/avatar-kimberly-smith.webp"
+                avatar="../assets/images/avatar-kimberly-smith.webp"
                 name="Kimberly Smith"
                 action="commented on your picture"
+                picture="../assets/images/image-chess.webp"
                 isRead={isRead}
                 time="1 week ago"
             />
             <Notification
-                picture="../assets/images/avatar-nathan-peterson.webp"
+                avatar="../assets/images/avatar-nathan-peterson.webp"
                 name="Nathan Peterson"
                 action="reacted to you recent post "
                 post="5 end-game strategies to increase your winrate"
@@ -56,7 +57,7 @@ function Feed() {
                 time="2 weeks ago"
             />
             <Notification
-                picture="../assets/images/avatar-anna-kim.webp"
+                avatar="../assets/images/avatar-anna-kim.webp"
                 name="Anna Kim"
                 action="left the group "
                 group="Chess Club"
