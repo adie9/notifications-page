@@ -22,6 +22,10 @@ $pr-blue: hsl(219, 85%, 26%);
  body {
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-size: $body-fs;
+    
+ }
+
+ .App {
     margin: 10px;
  }
 
@@ -45,6 +49,38 @@ $pr-blue: hsl(219, 85%, 26%);
 
     .mark-read {
         color: $grayish-blue;
+    }
+}
+
+// Feed styles
+.feed-container {
+    background-color: $dark-grayish-blue;
+}
+
+// Notification styles
+@mixin notification-box() {
+    border-radius: 10px;
+}
+
+.notification-container {
+    @include notification-box();
+    
+    display: flex;
+    padding: 10px;
+    column-gap: 10px;
+    background-color: $very-light-grayish-blue;
+
+
+    img {
+        width: 35px;
+    }
+
+    p {
+        
+        .time-since {
+            color: $grayish-blue;
+        }
+        
     }
 }
 
