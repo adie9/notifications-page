@@ -119,8 +119,14 @@ $pr-blue: hsl(219, 85%, 26%);
             color: $dark-grayish-blue;
         }
 
+
         .post {
             color: $dark-grayish-blue;
+
+            &:hover {
+                @include hover-blue-txt();
+                
+            }
         }
 
         .message {
@@ -129,10 +135,16 @@ $pr-blue: hsl(219, 85%, 26%);
             padding: 10px 15px 10px 10px;
             margin-top: 10px;
             color: $dark-grayish-blue;
+
+            &:hover {
+                background-color: $light-grayish-blue-1;
+                cursor: pointer;
+            }
         }
 
         .group {
             color: $pr-blue;
+            cursor: pointer;
         }
 
 
