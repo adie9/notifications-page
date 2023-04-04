@@ -31,7 +31,7 @@ function Feed({isRead, setIsRead, isUnread, setIsUnread}) {
                 group="Chess Club"
                 isUnread={isUnread}
                 setIsUnread={setIsUnread}
-                time="5 days ago"
+                time="1 day ago"
             />
             <Notification
                 avatar="/images/avatar-rizky-hasanuddin.webp"
